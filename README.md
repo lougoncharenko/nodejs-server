@@ -8,6 +8,7 @@ In this project, I explore Node.js fundamentals by building an HTTP server witho
 - [node.js](https://nodejs.dev/en/)
 - [nodemon](https://nodemon.io/) 
 - [express](https://expressjs.com/)
+- [embedded Javascript templating](https://ejs.co/)
 
 ## Javascript fundamentals
 - HTTP
