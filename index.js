@@ -15,9 +15,10 @@ app.get('/about', (req, res) => {
   res.render('about')
 })
 
-app.get('/contact', (req, res) => {
-  res.render('contact-me')
+app.get('/blogs/create', (req, res) => {
+  res.render('blogs-create')
 })
+
 app.listen(PORT, () =>
   console.log(`SERVER listening on port ${PORT}!`),
 );
