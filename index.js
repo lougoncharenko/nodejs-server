@@ -1,33 +1,14 @@
-const http = require('http');
-const fs = require('fs');
+const express = require("express");
+const app = express();
+PORT = 3000;
 
-const server= http.createServer((req,res)=>{
- res.statusCode = 200;
- //set header content type
- res.setHeader('Content-Type', 'text/plain');
+//BASIC ROUTES
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
- let path = './views/';
- switch (req.url){
-  case '/':
-    path += 'index.html';
-    break;
-  case '/about':
-    path += 'about.html';
-    break;
- }
+app.listen(PORT, () =>
+  console.log(`SERVER listening on port ${PORT}!`),
+);
 
- fs.readFile(path, (err, data)=>{
-  if (err) {
-    console.log(err)
-   } else {
-    res.end(data);
-   }
- });
-});
-const port = 3000;
-
-server.listen(port, 'localhost', ()=>{
-  console.log(`Server running on port: ${port}`)
-});
-
-
+module.exports = app;

@@ -7,6 +7,7 @@ In this project, I explore Node.js fundamentals by building an HTTP server witho
 ## Packages used
 - [node.js](https://nodejs.dev/en/)
 - [nodemon](https://nodemon.io/) 
+- [express](https://expressjs.com/)
 
 ## Javascript fundamentals
 - HTTP
