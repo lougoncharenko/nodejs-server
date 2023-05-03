@@ -3,6 +3,10 @@
 ## About this repo
 In this project, I explore Node.js fundamentals by building an HTTP server without express.
 
+
+## Packages used
+- [nodemon](https://nodemon.io/) 
+
 ## Javascript fundamentals
 - HTTP
 - JSON
